@@ -80,4 +80,15 @@ private GoogleService googleService;
 		
 	}
 
+	@Override
+	public void logIn(User user) {
+		if (user.getEmail().equals("derler@gmail.com")&& user.getParola().equals("123456")) {
+			System.out.println("You are logged in!");
+		}else {
+			System.out.println("You are not logged in!");
+			return;
+		}
+		
+	}
+
 }

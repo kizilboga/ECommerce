@@ -12,9 +12,10 @@ public class HibernateUserDao implements UserDao {
 		
 	}
 
+
 	@Override
-	public void getUser(User user) {
-		// TODO Auto-generated method stub
+	public void logIn(User user) {
+		System.out.println("Login gerçekleþti "+ user.getName()+" "+user.getLastName());
 		
 	}
 

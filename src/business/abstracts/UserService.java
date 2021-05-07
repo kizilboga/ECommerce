@@ -9,4 +9,6 @@ public interface UserService {
 	void sendMessage(String message);
 	void registerSuccess();
 	void registerFail();
+	
+	void logIn(User user);
 }

@@ -11,12 +11,13 @@ public class Main {
 User user=new User();
 user.setName("id");
 user.setLastName("kzil");
-user.setEmail("deler@gmail.com");
-user.setParola("1234er");
+user.setEmail("derler@gmail.com");
+user.setParola("123456");
 
 UserService userservice=new UserManager(new HibernateUserDao(), new GoogleManagerAdapter());
 
 userservice.register(user);
+userservice.logIn(user);
 
 	}
 
